@@ -6,7 +6,7 @@ for i in `seq $cont_count`
 do
 	echo "================================"
 	echo "Creating www.student$1 container.."
-	sleep 1
+	sleep 1;
 docker run --name www.student$i -d -it --rm tejaswi94/student-img /bin/bash
 echo "www.student$i container has been created!"
 echo "================================"
