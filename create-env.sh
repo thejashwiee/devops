@@ -11,4 +11,4 @@ docker run --name www.student$i -d -it --rm tejaswi94/student-img /bin/bash
 echo "www.student$i container has been created!"
 echo "================================"
 done
-docker Inspect --format {{.NetworkSettings.Networks.bridge.IPAddress}} 	`docker ps -a -q` > Ips.txt
+docker inspect --format {{.NetworkSettings.Networks.bridge.IPAddress}} `docker ps -a -q` > Ips.txt
